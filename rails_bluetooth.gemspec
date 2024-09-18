@@ -1,8 +1,6 @@
-require_relative "lib/rails_bluetooth/version"
-
 Gem::Specification.new do |spec|
   spec.name        = "rails_bluetooth"
-  spec.version     = RailsBluetooth::VERSION
+  spec.version     = '0.0.1'
   spec.authors     = [ "qinmingyuan" ]
   spec.email       = [ "mingyuan0715@foxmail.com" ]
   spec.homepage    = "TODO"
