@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 
     namespace 'bluetooth', defaults: { business: 'bluetooth' } do
       namespace :admin, defaults: { namespace: 'admin' } do
-
+        root 'home#index'
+        resources :devices
       end
     end
 
