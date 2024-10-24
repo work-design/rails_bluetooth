@@ -1,5 +1,5 @@
 module Bluetooth
-  module Model::Device
+  module Model::Err
     extend ActiveSupport::Concern
 
     included do
