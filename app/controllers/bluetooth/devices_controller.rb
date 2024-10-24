@@ -7,5 +7,17 @@ module Bluetooth
       render json: { devices: @devices.pluck(:name) }
     end
 
+    def err
+
+    end
+
+    def test
+      cpcl = BaseCpcl.new
+      cpcl.text '打印机测试'
+      cpcl.right_qrcode('dayinjiceshi', y: 20)
+
+      render json: cpcl.render.bytes
+    end
+
   end
 end
